@@ -9,7 +9,7 @@ const menus = {
   buy: `
     switchboard-operator buy <options>
 
-    --area-code, -a ..... the area code to use
+    --area_code, -a ..... the area code to use
     --quantity, -q ...... the number of phone numbers to buy`,
 }
 
