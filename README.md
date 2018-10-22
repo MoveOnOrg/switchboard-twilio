@@ -2,7 +2,7 @@
 
 "Hello, operator? Could I buy some phone numbers please?"
 
-This is a small script to buy phone numbers from Twilio to text from.
+This is a small CLI app to buy phone numbers from Twilio to text from.
 
 ## Requirements
 
@@ -30,13 +30,27 @@ $ export AUTH_TOKEN=[auth token]
 
 ## Run
 
-You can activate the virtual env:
+To buy phone numbers:
 
 ```shell
-$ switchboard-operator
+$ switchboard-operator buy <options>
+```
+
+If you need help
+
+```shell
+$ switchboard-operator help
+```
+
+or
+
+```shell
+$ switchboard-operator help buy
 ```
 
 ## Development
+
+To run for development:
 
 ```shell
 $ cd switchboard-operator
@@ -56,3 +70,7 @@ $ ./bin/switchboard-operator
 ```shell
 $ npm test
 ```
+
+## Other
+
+This CLI app is based off [this tutorial](https://timber.io/blog/creating-a-real-world-cli-app-with-node/).
