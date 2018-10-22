@@ -21,7 +21,7 @@ module.exports = async (args) => {
 
 			spinner.success(`Finished buying ${quantity} phone numbers with area code ${areaCode}`)
 		} else {
-			spinner.fail('Please ensure --area_code and --quantity are present, and that --quantity is <= 100')
+			spinner.fail('Please ensure --area_code and --quantity are specified, and that --quantity is <= 100')
 		}
   } catch (err) {
     spinner.fail(err)
