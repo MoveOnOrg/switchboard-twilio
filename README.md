@@ -2,20 +2,20 @@
 
 "Hello, operator? Could I buy some phone numbers please?"
 
-This is a small script to buy phone numbers from Twilio to serve as text-from addresses.
+This is a small script to buy phone numbers from Twilio to text from.
 
 ## Requirements
 
-* Python 3
-* [pipenv](https://pipenv.readthedocs.io/en/latest/)
+* npm
+* [jest](https://jestjs.io/docs/en/getting-started.html)
 
 ## Set up
 
-Use pipenv to install requirements.
+Use npm to install requirements.
 
 ```shell
 $ cd switchboard-operator
-$ pipenv install
+$ npm install
 ```
 
 You'll also need to set up environment variables:
@@ -33,18 +33,26 @@ $ export AUTH_TOKEN=[auth token]
 You can activate the virtual env:
 
 ```shell
-$ pipenv shell
-$ python run.py
+$ switchboard-operator
 ```
 
-Or alternatively:
+## Development
 
 ```shell
-$ pipenv run python run.py
+$ cd switchboard-operator
+$ npm link
+$ switchboard-operator
+```
+
+or
+
+```shell
+$ cd switchboard-operator
+$ ./bin/switchboard-operator
 ```
 
 ## Test
 
 ```shell
-$ pipenv run pytest
+$ npm test
 ```
