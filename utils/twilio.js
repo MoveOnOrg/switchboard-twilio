@@ -1,3 +1,4 @@
+require('dotenv').config()
 const accountSid = process.env.ACCOUNT_SID
 const authToken = process.env.AUTH_TOKEN
 const smsApplicationSid = process.env.SMS_APP_SID

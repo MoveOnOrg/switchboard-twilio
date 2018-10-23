@@ -26,6 +26,7 @@
     "jest": "^23.6.0"
   },
   "dependencies": {
+    "dotenv": "^6.1.0",
     "minimist": "^1.2.0",
     "ora": "^3.0.0",
     "twilio": "^3.23.1"

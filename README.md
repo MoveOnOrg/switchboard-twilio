@@ -18,7 +18,7 @@ $ cd switchboard-operator
 $ npm install
 ```
 
-You'll also need to set up environment variables:
+You'll also need to set up environment variables via export or a .env file (based on .example.env):
 
 ```shell
 $ export ACCOUNT_SID=[account sid]
