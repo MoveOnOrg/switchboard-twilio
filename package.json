@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "minimist": "^1.2.0",
-    "ora": "^3.0.0"
+    "ora": "^3.0.0",
+    "twilio": "^3.23.1"
   }
 }

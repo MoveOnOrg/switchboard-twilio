@@ -16,8 +16,8 @@ module.exports = async (args) => {
 			Array.from(new Array(quantity),
 								 (x,i) => {
 									 spinner.text = `Buying phone number ${i+1}`
-									 const purchasedNumber = await buyNumber('' + areaCode)
-									 spinner.text = `Purchased: ${purchasedNumber.sid}`;
+									 const purchase = buyNumber('' + areaCode)
+									 purchase.then(purchasedNumber => spinner.text = `Purchased: ${purchasedNumber.sid}`)
 								 })
 
 			spinner.success(`Finished buying ${quantity} phone numbers with area code ${areaCode}`)

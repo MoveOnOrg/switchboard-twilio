@@ -16,5 +16,5 @@ module.exports = async (areaCode) => {
 			return client.incomingPhoneNumbers.create({
 				phoneNumber: number.phoneNumber,
 			})
-		}).done()
+		})
 }
