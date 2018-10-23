@@ -17,10 +17,10 @@ module.exports = async (args) => {
 								 (x,i) => {
 									 spinner.text = `Buying phone number ${i+1}`
 									 const purchase = buyNumber('' + areaCode)
-									 purchase.then(purchasedNumber => spinner.text = `Purchased: ${purchasedNumber.sid}`)
+									 return purchase
 								 })
 
-			spinner.success(`Finished buying ${quantity} phone numbers with area code ${areaCode}`)
+			spinner.succeed(`Finished buying ${quantity} phone numbers with area code ${areaCode}`)
 		} else {
 			spinner.fail('Please ensure --area_code and --quantity are specified, and that --quantity is <= 100')
 		}
