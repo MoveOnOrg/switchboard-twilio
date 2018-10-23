@@ -1,11 +1,12 @@
 const ora = require('ora')
 const buyArgsValidation = require('../utils/buy_args_validation')
-const buyNumber = require('../utils/twilio')
 
 module.exports = async (args) => {
   const spinner = ora('Loading unicorns').start();
 
   try {
+		const buyNumber = require('../utils/twilio')
+
     const areaCode = args.area_code || args.a
 		const quantity = args.quantity || args.q
 
@@ -16,7 +17,7 @@ module.exports = async (args) => {
 								 (x,i) => {
 									 spinner.text = `Buying phone number ${i+1}`
 									 const purchasedNumber = await buyNumber('' + areaCode)
-									 spinner.text = `SID: ${purchasedNumber.sid}`;
+									 spinner.text = `Purchased: ${purchasedNumber.sid}`;
 								 })
 
 			spinner.success(`Finished buying ${quantity} phone numbers with area code ${areaCode}`)
