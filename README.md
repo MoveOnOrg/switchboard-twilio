@@ -8,6 +8,7 @@ This is a small CLI app to buy phone numbers from Twilio to text from.
 
 * npm
 * [jest](https://jestjs.io/docs/en/getting-started.html)
+* Node v10.7.0 +
 
 ## Set up
 
@@ -26,6 +27,10 @@ $ export ACCOUNT_SID=[account sid]
 
 ```shell
 $ export AUTH_TOKEN=[auth token]
+```
+
+```shell
+$ export SMS_APP_SID=[sms messaging service sid]
 ```
 
 ## Run
