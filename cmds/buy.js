@@ -13,12 +13,15 @@ module.exports = async (args) => {
 	if (buyArgsValidation(areaCode, quantity)) {
 	  spinner.text = `Buying ${quantity} phone numbers with area code ${areaCode}`
 
-	  Array.from(new Array(quantity),
-				 (x,i) => {
-				   spinner.text = `Buying phone number ${i+1}`
-				   const purchase = buyNumber('' + areaCode)
-				   return purchase
-				 })
+	  var current_phone_number = 0
+
+	  while (current_phone_number < quantity) {
+		current_phone_number += 1
+		const purchase = await buyNumber('' + areaCode)
+		spinner.succeed(purchase.phoneNumber)
+		spinner.start()
+		spinner.text = `Buying ${quantity - current_phone_number} phone numbers with area code ${areaCode}`
+	  }
 
 	  spinner.succeed(`Finished buying ${quantity} phone numbers with area code ${areaCode}`)
 	} else {

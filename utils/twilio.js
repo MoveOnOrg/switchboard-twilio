@@ -13,18 +13,17 @@ module.exports = async (areaCode) => {
 	  smsEnabled: true,
 	})
 	.then(data => {
-	  const number = data[0];
+	  const number = data[0]
 	  return client.incomingPhoneNumbers.create({
-		friendlyName: 'Election Number',
-		phoneNumber: number.phoneNumber,
-		voiceMethod: 'POST',
-		voiceUrl: 'https://demo.twilio.com/welcome/voice/'
+	  	friendlyName: 'Election Number',
+	  	phoneNumber: number.phoneNumber,
+	  	voiceMethod: 'POST',
+	  	voiceUrl: 'https://demo.twilio.com/welcome/voice/'
 	  })
-		.then(purchasedNumber => {
-		  client.messaging.services(smsApplicationSid)
-			.phoneNumbers
-			.create({phoneNumberSid: purchasedNumber.sid})
-			.then(num => console.log(num.phoneNumber))
-		})
+	})
+	.then(purchasedNumber => {
+	  return client.messaging.services(smsApplicationSid)
+	  	.phoneNumbers
+	  	.create({phoneNumberSid: purchasedNumber.sid})
 	})
 }
