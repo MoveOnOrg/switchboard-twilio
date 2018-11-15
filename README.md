@@ -35,22 +35,16 @@ $ export SMS_APP_SID=[sms messaging service sid]
 
 ## Run
 
-To buy phone numbers:
+To buy phone numbers, example:
 
 ```shell
-$ switchboard-operator buy <options>
+$ switchboard-operator buy --area_code 617 --quantity 2
 ```
 
-If you need help
+If you need help:
 
 ```shell
-$ switchboard-operator help
-```
-
-or
-
-```shell
-$ switchboard-operator help buy
+$ switchboard-operator help <command>
 ```
 
 ## Development
