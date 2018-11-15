@@ -33,6 +33,14 @@ $ export AUTH_TOKEN=[auth token]
 $ export SMS_APP_SID=[sms messaging service sid]
 ```
 
+```shell
+$ export FRIENDLY_NAME=[friendly name added in twilio]
+```
+
+```shell
+$ export VOICE_URL=[voice url added to number in twilio]
+```
+
 ## Run
 
 To buy phone numbers, example:
