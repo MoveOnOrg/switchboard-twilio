@@ -7,7 +7,7 @@ module.exports = async (args) => {
   try {
 	const buyNumber = require('../utils/twilio')
 
-    const areaCode = args.area_code || args.a
+  const areaCode = args.area_code || args.a
 	const quantity = args.quantity || args.q
 
 	if (buyArgsValidation(areaCode, quantity)) {

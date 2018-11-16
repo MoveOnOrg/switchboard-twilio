@@ -10,13 +10,14 @@ module.exports = async (args) => {
 	if (releaseArgsValidation(phoneNumber)) {
     // const phoneNumber = args.phone_number || ''
 	  // spinner.text = `Releasing ${phoneNumber}`
+    spinner.text = `Releasing ${phoneNumber} from messaging service`
 		const release = await releaseNumber(args)
-		// spinner.succeed(purchase.phoneNumber)
-		spinner.start()
+		spinner.succeed(release)
+    spinner.start()
   	} else {
   	  spinner.fail('Error releasing number')
     }
-   // spinner.succeed(`Finished releasing ${phoneNumber}`)
+   spinner.succeed(`Released ${phoneNumber}`)
   } catch (err) {
     spinner.fail(err)
   }
