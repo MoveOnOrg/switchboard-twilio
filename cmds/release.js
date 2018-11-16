@@ -8,8 +8,6 @@ module.exports = async (args) => {
 	const releaseNumber = require('../utils/twilio_release')
   const phoneNumber = args.phone_number || args.a
 	if (releaseArgsValidation(phoneNumber)) {
-    // const phoneNumber = args.phone_number || ''
-	  // spinner.text = `Releasing ${phoneNumber}`
     spinner.text = `Releasing ${phoneNumber} from messaging service`
 		const release = await releaseNumber(args)
 		spinner.succeed(release)

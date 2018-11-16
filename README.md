@@ -49,6 +49,12 @@ To buy phone numbers, example:
 $ switchboard-operator buy --area_code 617 --quantity 2
 ```
 
+To release a phone number (with number formatted like example), example:
+
+```shell
+$ switchboard-operator release --phone_number 5555555555
+```
+
 If you need help:
 
 ```shell
