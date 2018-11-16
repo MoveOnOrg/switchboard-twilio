@@ -18,6 +18,10 @@ module.exports = () => {
       require('./cmds/buy')(args)
       break
 
+    case 'release':
+      require('./cmds/release')(args)
+      break
+
     case 'version':
       require('./cmds/version')(args)
       break

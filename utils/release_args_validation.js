@@ -1,10 +1,8 @@
-function releaseArgsValidation(args) {
-	if (args.phone_number === undefined) {
+function releaseArgsValidation(phone_number) {
+	if (phone_number === undefined) {
 		return false
-	} else if (args.friendly_name === undefined) {
-		return false
-	} else {
-		return false
+	} else if (phone_number) {
+		return true
 	}
 }
 
