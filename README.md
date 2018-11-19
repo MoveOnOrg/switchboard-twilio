@@ -2,7 +2,12 @@
 
 "Hello, operator? Could I buy some phone numbers please?"
 
-This is a small CLI app to buy phone numbers from Twilio to text from.
+This is a small CLI app to buy and release phone numbers from the [Twilio API](https://www.twilio.com/docs/phone-numbers/api) to text from. This project was built to specifically add phone numbers to a Twilio Messaging Service used by [Spoke](https://github.com/moveonorg/spoke).
+
+## Current Features
+* Buying Phone Numbers by area codes in (available) quantities up to 100
+* Associating purchased numbers with a messaging service, friendly name and voice url upon purchase
+* Releasing Phone Numbers by 1
 
 ## Requirements
 
