@@ -8,21 +8,21 @@
   },
   "scripts": {
     "test": "jest",
-    "lint": "./node_modules/.bin/eslint .eslintrc.js"
+    "lint": "./node_modules/.bin/eslint '**/*.js' --ignore-pattern '!.eslintrc.js'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MoveOnOrg/switchboard-operator.git"
+    "url": "git+https://github.com/MoveOnOrg/switchboard-twilio.git"
   },
   "keywords": [
     "Twilio"
   ],
   "author": "MoveOn",
   "bugs": {
-    "url": "https://github.com/MoveOnOrg/switchboard-operator/issues"
+    "url": "https://github.com/MoveOnOrg/switchboard-twilio/issues"
   },
   "private": true,
-  "homepage": "https://github.com/MoveOnOrg/switchboard-operator#readme",
+  "homepage": "https://github.com/MoveOnOrg/switchboard-twilio#readme",
   "devDependencies": {
     "eslint": "^5.9.0",
     "jest": "^23.6.0"
