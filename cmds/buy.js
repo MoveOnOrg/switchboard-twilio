@@ -5,7 +5,7 @@ module.exports = async (args) => {
   const spinner = ora('Loading').start();
 
   try {
-	const buyNumber = require('../utils/twilio')
+	const buyNumber = require('../utils/twilio_buy')
 
   const areaCode = args.area_code || args.a
 	const quantity = args.quantity || args.q

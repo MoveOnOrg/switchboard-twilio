@@ -1,16 +1,22 @@
 const menus = {
   main: `
-    switchboard-operator [command] <options>
+    switchboard [command] <options>
 
     buy ................ buy phone numbers from Twilio
     version ............ show package version
-    help ............... show help menu for a command`,
+    help ............... show help menu for a command
+    release ............ release a phone number from Twilio`,
 
   buy: `
-    switchboard-operator buy <options>
+    switchboard buy <options>
 
     --area_code, -a ..... the area code to use
     --quantity, -q ...... the number of phone numbers to buy`,
+    
+  release: `
+    switchboard release <options>
+
+    --phone_number ...... phone number to buy`
 }
 
 module.exports = (args) => {

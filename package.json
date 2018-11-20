@@ -1,10 +1,10 @@
 {
-  "name": "switchboard-operator",
+  "name": "switchboard-twilio",
   "version": "1.0.0",
   "description": "A small script to buy phone numbers from Twilio to text from.",
   "main": "app.js",
   "bin": {
-    "switchboard-operator": "bin/switchboard-operator"
+    "switchboard": "bin/switchboard"
   },
   "scripts": {
     "test": "jest",
