@@ -17,7 +17,11 @@
   "keywords": [
     "Twilio"
   ],
-  "author": "MoveOn",
+  "author": {
+    "name": "MoveOn",
+    "email": "opensource@moveon.org"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/MoveOnOrg/switchboard-twilio/issues"
   },
