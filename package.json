@@ -1,28 +1,34 @@
 {
-  "name": "switchboard-operator",
+  "name": "switchboard-twilio",
   "version": "1.0.0",
   "description": "A small script to buy phone numbers from Twilio to text from.",
   "main": "app.js",
   "bin": {
-    "switchboard-operator": "bin/switchboard-operator"
+    "switchboard": "bin/switchboard"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "./node_modules/.bin/eslint '**/*.js' --ignore-pattern '!.eslintrc.js'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MoveOnOrg/switchboard-operator.git"
+    "url": "git+https://github.com/MoveOnOrg/switchboard-twilio.git"
   },
   "keywords": [
     "Twilio"
   ],
-  "author": "MoveOn",
+  "author": {
+    "name": "MoveOn",
+    "email": "opensource@moveon.org"
+  },
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MoveOnOrg/switchboard-operator/issues"
+    "url": "https://github.com/MoveOnOrg/switchboard-twilio/issues"
   },
   "private": true,
-  "homepage": "https://github.com/MoveOnOrg/switchboard-operator#readme",
+  "homepage": "https://github.com/MoveOnOrg/switchboard-twilio#readme",
   "devDependencies": {
+    "eslint": "^5.9.0",
     "jest": "^23.6.0"
   },
   "dependencies": {

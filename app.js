@@ -14,20 +14,24 @@ module.exports = () => {
   }
 
   switch (cmd) {
-    case 'buy':
-      require('./cmds/buy')(args)
-      break
+  case 'buy':
+    require('./cmds/buy')(args)
+    break
 
-    case 'version':
-      require('./cmds/version')(args)
-      break
+  case 'release':
+    require('./cmds/release')(args)
+    break
 
-    case 'help':
-      require('./cmds/help')(args)
-      break
+  case 'version':
+    require('./cmds/version')(args)
+    break
 
-    default:
-      console.error(`"${cmd}" is not a valid command!`)
-      break
+  case 'help':
+    require('./cmds/help')(args)
+    break
+
+  default:
+    console.error(`"${cmd}" is not a valid command!`)
+    break
   }
 }
