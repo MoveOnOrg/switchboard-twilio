@@ -18,7 +18,7 @@ module.exports = async (args) => {
       console.log('args:', args);
       spinner.text = `Releasing all phone numbers from messaging service`
       const wipe = await wipeAllNumbers()
-      spinner.suceed(wipe)
+      spinner.succeed(wipe)
       spinner.start()
     } else {
       spinner.fail('Error releasing number')
