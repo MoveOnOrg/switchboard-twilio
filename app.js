@@ -22,6 +22,10 @@ module.exports = () => {
     require('./cmds/release')(args)
     break
 
+  case 'wipe':
+    require('./cmds/release')(args)
+    break
+
   case 'version':
     require('./cmds/version')(args)
     break
