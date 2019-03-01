@@ -60,6 +60,12 @@ To release a phone number (with number formatted like example), example:
 $ switchboard release --phone_number 5555555555
 ```
 
+To release all the phone numbers associated with a messaging service:
+
+```shell
+$ switchboard wipe --all
+```
+
 If you need help:
 
 ```shell
