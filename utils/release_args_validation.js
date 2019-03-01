@@ -6,4 +6,4 @@ function releaseArgsValidation(phone_number) {
   }
 }
 
-module.exports = releaseArgsValidation
+module.exports = { releaseArgsValidation }
