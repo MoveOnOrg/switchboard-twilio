@@ -20,7 +20,7 @@ This is a small CLI app to buy and release phone numbers from the [Twilio API](h
 Use npm to install requirements.
 
 ```shell
-$ cd switchboard
+$ cd switchboard-twilio
 $ npm install
 ```
 
