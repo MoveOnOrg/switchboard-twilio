@@ -29,7 +29,7 @@
   "homepage": "https://github.com/MoveOnOrg/switchboard-twilio#readme",
   "devDependencies": {
     "eslint": "^5.9.0",
-    "jest": "^23.6.0"
+    "jest": "^24.8.0"
   },
   "dependencies": {
     "dotenv": "^6.1.0",
